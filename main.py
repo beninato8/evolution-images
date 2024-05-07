@@ -39,10 +39,7 @@ def rotate_image(img, angle):
 
 
 def scale_image(img, factor):
-    # Get the dimensions of the original image
     height, width = img.shape[:2]
-
-    # Scale the image by a factor of 1.5
     return cv2.resize(img, (int(width * factor), int(height * factor)))
 
 
